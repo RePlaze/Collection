@@ -1,5 +1,3 @@
-Sure, here's an example of how you could write about the Map interfaces and their differences in a README.md format:
-
 # Java Map Interfaces
 
 In Java, the Map interface provides an object that maps keys to values. There are several different implementations of the Map interface, each with its own unique properties.
