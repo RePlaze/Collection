@@ -17,6 +17,7 @@ public class $HashMap {
     private static final HashMap<String, Integer> map = new HashMap<>();
 
     public static void main(String[] args) {
+        // Key methods:
         put();
         get();
         remove();
@@ -29,51 +30,57 @@ public class $HashMap {
 
     public static void put() {
         // put(key, value) - adds a key-value pair to the map
-        map.put("John", 25);
-        map.put("Jane", 30);
-        println("Added John and Jane to the map");
+        map.put( "John", 25 );
+        map.put( "Jane", 30 );
+        map.put( "Alex", 19 );
+        println( "Added John and Jane to the map" );
     }
 
     public static void get() {
         // get(key) - retrieves the value for a specific key
-        int ageOfJohn = map.get("John");
-        println("Age of John: " + ageOfJohn);
+        int ageOfJohn = map.get( "John" );
+        println( "Age of John: " + ageOfJohn );
     }
 
     public static void remove() {
         // remove(key) - removes a key-value pair from the map
-        map.remove("Jane");
-        println("Removed Jane from the map");
+        map.remove( "Jane" );
+        println( "Removed Jane from the map" );
     }
 
     public static void containsKey() {
         // containsKey(key) - checks if a key is present in the map
-        boolean isJanePresent = map.containsKey("Jane");
-        println("Is Jane present in the map? " + isJanePresent);
+        boolean isJanePresent = map.containsKey( "Jane" );
+        println( "Is Jane present in the map? " + isJanePresent );
     }
 
     public static void values() {
         // values() - gets a collection of the values in the map
-        println("Values in the map: " + map.values());
+        println( "Values in the map: " + map.values() );
     }
 
     public static void size() {
         // size() - gets the number of key-value mappings in the map
-        println("Number of entries in the map: " + map.size());
+        println( "Number of entries in the map: " + map.size() );
     }
 
     public static void clear() {
         // clear() - removes all key-value pairs from the map
         map.clear();
-        println("Cleared the map");
+        println( "Cleared the map" );
     }
 
     public static void isEmpty() {
         // isEmpty() - checks if the map is empty
         boolean isMapEmpty = map.isEmpty();
-        println("Is the map empty? " + isMapEmpty);
+        println( "Is the map empty? " + isMapEmpty );
     }
 
-    public static void println(Object string) {System.out.println(string);}
-    public static void print(Object string) {System.out.print(string);}
+    public static void println(Object string) {
+        System.out.println( string );
+    }
+
+    public static void print(Object string) {
+        System.out.print( string );
+    }
 }
